@@ -250,11 +250,11 @@ def build_bazel_rules_swift(**kwargs):
 
 def com_github_apple_swift_swift_protobuf(**kwargs):
     if "com_github_apple_swift_swift_protobuf" not in native.existing_rules():
-        version = "1.4.0"
+        version = "1.5.0"
         http_archive(
             name = "com_github_apple_swift_swift_protobuf",
             url = "https://github.com/apple/swift-protobuf/archive/%s.tar.gz" % version,
-            sha256 = "efa256d572d19fc23756a30089129af523173ad29a84ee87800fa88f056efaac",
+            sha256 = "7f0f64881cabb4e96bd5eaae2449bc599b11d9205036c919f9528fff8b23ec78",
             strip_prefix = "swift-protobuf-" + version,
             build_file = "@build_bazel_rules_swift//third_party:com_github_apple_swift_swift_protobuf/BUILD.overlay",
         )
